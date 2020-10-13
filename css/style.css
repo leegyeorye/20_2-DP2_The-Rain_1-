@@ -1,0 +1,29 @@
+.box{
+	width: 101.7px;
+	height: 101.7px;
+	background-color:black;
+	transition-property: all;
+	transition-duration: 0.8s;
+	float: left;
+	animation: opacityToZero;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+	transform: scale(1,1);
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	position: relative;
+	background-image:url("/images/");}
+
+.box:hover{
+	transform: scale(0,0);
+	animation-play-state: running;
+
+	}
+
+@keyframes opacityToZero{
+	0%{opacity: 0.5}
+	100%{opacity: 0}
+	
+}
+.start-img{position: absolute;z-index: -100;}
